@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M80WY0QHY7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M80WY0QHY7');
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=\, initial-scale=1.0">
-  <title>Document</title>
+  <title>GA4_gtag</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <h1>검색 테스트 페이지</h1>
-  <input type="text" placeholder="검색어를 입력하세요">
-  <button>검색</button>
+  <div>
+    <input id="searchInput" type="text" placeholder="무엇을 상상하든 그이상일껄">
+    <button onclick="handleSearch()">검색</button>
+  </div>      
 </body>
 </html>
